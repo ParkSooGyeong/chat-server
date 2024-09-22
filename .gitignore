@@ -1,0 +1,20 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 환경 파일
+.env
+.env.local
+.env.*.local
+
+# macOS 시스템 파일 무시
+.DS_Store
+
+# 빌드 디렉토리
+dist/
+build/
+
+# 로그 파일
+logs/
+*.log
