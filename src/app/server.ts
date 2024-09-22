@@ -2,6 +2,7 @@ import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
 import { getChatbotResponse } from './chatbotResponses'; 
+import { format } from 'date-fns';
 
 export const createServer = () => {
   const app = express();
@@ -21,10 +22,11 @@ export const createServer = () => {
       io.emit('receiveMessage', data);
 
       setTimeout(() => {
+        const formattedTime = format(new Date(), 'h:mma');
         const responseMessage = {
           id: data.id + 1,
           name: '홍길동',
-          time: new Date().toLocaleTimeString(), 
+          time: formattedTime, 
           message: getChatbotResponse(data.message), // 챗봇 응답 생성
         };
 

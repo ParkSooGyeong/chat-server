@@ -104,6 +104,8 @@ export const keywordResponses: { [key: string]: string } = {
     '경쟁력': '경쟁력은 현대 사회에서 중요한 요소입니다.',
     '성취': '성취는 끊임없는 노력과 인내의 결과입니다.',
     '호기심': '호기심은 새로운 배움의 시작입니다.',
+    '연결': '성공적으로 연결되었습니다.',
+    '서버': '성공적으로 연결되었습니다.'
 };
   
 export const getChatbotResponse = (message: string): string => {
