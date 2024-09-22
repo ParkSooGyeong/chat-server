@@ -23,7 +23,7 @@ export const createServer = () => {
       setTimeout(() => {
         const responseMessage = {
           id: data.id + 1,
-          name: '챗봇',
+          name: '홍길동',
           time: new Date().toLocaleTimeString(), 
           message: getChatbotResponse(data.message), // 챗봇 응답 생성
         };
